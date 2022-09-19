@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <title>Jeu de dés</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Bouton new game -->
+      <div class="row">
+        <div class="border-test new-game">
+          <button id="new-game" onclick="newGame()">New Game</button>
+        </div>
+      </div>
+      <!-- Fin bouton new game -->
+      <div class="row">
+        <!-- Player 1 -->
+        <div class="col-sm">
+          <div class="border-test player" id="player1"><b>Player 1</b></div>
+          <div class="border-test player-score-global" id="p1global">0</div>
+          <div class="border-test player-score-current">
+            <p>Current:</p>
+            <p id="p1current">0</p>
+          </div>
+        </div>
+        <!-- Fin player 1 -->
+        <!-- Dé + boutons roll dice et hold -->
+        <div class="col-sm">
+          <div class="player"></div>
+          <!-- Espace placeholder vide -->
+          <div class="border-test">
+            <div id="rollNumber" class="dice">
+              <img src="Images/d1.png" alt="1" width="200" height="200" />
+            </div>
+            <button id="roll" onclick="rollDice()">Roll Dice</button>
+            <button id="hold" onclick="hold()">Hold</button>
+          </div>
+        </div>
+        <!-- Fin dé + boutons -->
+        <!-- Player 2 -->
+        <div class="col-sm">
+          <div class="border-test player" id="player2">Player 2</div>
+          <div class="border-test player-score-global" id="p2global">0</div>
+          <div class="border-test player-score-current">
+            <p>Current:</p>
+            <p id="p2current">0</p>
+          </div>
+        </div>
+        <!-- Fin player 2 -->
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

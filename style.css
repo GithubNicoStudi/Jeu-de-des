@@ -1,0 +1,44 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.border-test {
+  border: #ff4d4d solid;
+  border-radius: 10px;
+}
+
+.new-game {
+  display: flex;
+  margin: auto;
+  width: 20%;
+}
+
+.player {
+  display: flex;
+  margin: auto;
+  width: 85%;
+  height: 20%;
+}
+
+.player-score-global,
+.dice {
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  height: 300px;
+}
+
+.player-score-current {
+  background-color: #ff4d4d;
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+
+img,
+button {
+  display: flex;
+  margin: auto;
+}
